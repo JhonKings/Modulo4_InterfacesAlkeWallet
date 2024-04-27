@@ -3,5 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="my_light_primary">#63b0fc</color>
+    <color name="grey">#EBEBEB</color>
+    <color name="blue">#1A87DD</color>
+
 
 </resources>

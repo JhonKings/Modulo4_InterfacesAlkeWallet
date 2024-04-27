@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_login"
+    android:background="@drawable/background_login2"
     tools:context=".pantallas.LoginPage">
 
     <ImageView
@@ -18,12 +18,10 @@
         android:id="@+id/text_title1"
         android:layout_width="315dp"
         android:layout_height="104dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/jua_regular"
         android:lineHeight="52dp"
-        android:text="Logea y empeza a tranferir!"
+        android:text="Registrarse y empezar a transferir"
         android:textFontWeight="400"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -33,24 +31,224 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Nombre"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_nombre"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Ingresar nombre"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Apellido"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextApellido"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_apellido"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Ingresar apellido"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Email"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_email"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Ingresar email"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Contraseña"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_contrasena"
+            android:background="@drawable/rounded_button"
+            android:drawableRight="@drawable/view_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Ingresar tu contraseña"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="501dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_reingresarContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Reingresar Contraseña"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextReingresarContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_reingresarContrasena"
+            android:background="@drawable/rounded_button"
+            android:drawableRight="@drawable/view_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Ingresar tu contraseña"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="501dp" />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/button1"
         android:layout_width="315dp"
-        android:layout_height="45dp"
+        android:layout_height="49dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="77dp"
         android:background="@drawable/shape"
         android:fontFamily="@font/jua_regular"
-        android:text="Login"
+        android:text="Crear Cuenta"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -59,7 +257,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/jua_regular"
-        android:text="Crear una nueva cuenta"
+        android:text="Ya tienes una cuenta??"
         android:textColor="@color/my_light_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

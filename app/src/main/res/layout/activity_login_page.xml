@@ -5,22 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_login"
+    android:background="@drawable/background_login2"
     tools:context=".pantallas.LoginPage">
 
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/status_bar"/>
+        android:background="@drawable/status_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/text_title1"
         android:layout_width="315dp"
         android:layout_height="104dp"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="30dp"
         android:fontFamily="@font/jua_regular"
         android:lineHeight="52dp"
         android:text="Logea y empeza a tranferir!"
@@ -34,13 +34,112 @@
         app:layout_constraintVertical_bias="0.0" />
 
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41">
+
+        <TextView
+            android:id="@+id/textView_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Email"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_email"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Ingresar tu email"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="315dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="156dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.019">
+
+        <TextView
+            android:id="@+id/textView_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Contraseña"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_contrasena"
+            android:background="@drawable/rounded_button"
+            android:drawableRight="@drawable/view_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Ingresar tu contraseña"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <TextView
+            android:id="@+id/textView_olvidoContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextPassword"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="right"
+            android:text="Olvidaste tu contraseña?"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+    </RelativeLayout>
+
+
     <Button
         android:id="@+id/button1"
         android:layout_width="315dp"
-        android:layout_height="45dp"
+        android:layout_height="49dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="77dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/shape"
         android:fontFamily="@font/jua_regular"
         android:text="Login"
@@ -67,21 +166,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="386dp"/>
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="253dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
