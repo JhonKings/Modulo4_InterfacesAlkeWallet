@@ -13,16 +13,13 @@
         android:theme="@style/Theme.Wallet"
         tools:targetApi="31">
         <activity
-            android:name=".pantallas.SingUpPage"
+            android:name=".pantallas.SingupPage_4"
             android:exported="false" />
         <activity
-            android:name=".pantallas.LoginPage"
+            android:name=".pantallas.LoginPage_3"
             android:exported="false" />
         <activity
-            android:name=".pantallas.LoginSingUpPage"
-            android:exported="false" />
-        <activity
-            android:name=".LoginPage"
+            android:name=".pantallas.LoginSingupPage_2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

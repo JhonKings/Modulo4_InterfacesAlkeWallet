@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_login2"
-    tools:context=".pantallas.LoginPage">
+    tools:context=".fragments.FragmentSingupPage_4">
 
     <ImageView
         android:id="@+id/status_bar"
@@ -18,29 +16,21 @@
         android:id="@+id/text_title1"
         android:layout_width="315dp"
         android:layout_height="104dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="-240dp"
+        android:layout_gravity="center"
         android:fontFamily="@font/jua_regular"
         android:lineHeight="52dp"
         android:text="Registrarse y empezar a transferir"
         android:textFontWeight="400"
         android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textStyle="bold"/>
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="315dp"
         android:layout_height="78dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title1"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_gravity="center"
+        android:layout_marginTop="-140dp">
 
         <TextView
             android:id="@+id/textView_nombre"
@@ -61,13 +51,7 @@
             android:background="@drawable/rounded_button"
             android:ems="10"
             android:hint="Ingresar nombre"
-            android:textSize="14dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.614"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.555" />
+            android:textSize="14dp" />
 
     </RelativeLayout>
 
@@ -75,11 +59,8 @@
         android:id="@+id/relativeLayout2"
         android:layout_width="315dp"
         android:layout_height="78dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_gravity="center"
+        android:layout_marginTop="-60dp">
 
         <TextView
             android:id="@+id/textView_apellido"
@@ -100,13 +81,7 @@
             android:background="@drawable/rounded_button"
             android:ems="10"
             android:hint="Ingresar apellido"
-            android:textSize="14dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.614"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.555" />
+            android:textSize="14dp"/>
 
     </RelativeLayout>
 
@@ -114,11 +89,8 @@
         android:id="@+id/relativeLayout3"
         android:layout_width="315dp"
         android:layout_height="78dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:id="@+id/textView_email"
@@ -140,13 +112,7 @@
             android:ems="10"
             android:hint="Ingresar email"
             android:inputType="textPassword"
-            android:textSize="14dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.614"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.555" />
+            android:textSize="14dp"/>
 
     </RelativeLayout>
 
@@ -154,11 +120,8 @@
         android:id="@+id/relativeLayout4"
         android:layout_width="315dp"
         android:layout_height="78dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
 
         <TextView
             android:id="@+id/textView_contrasena"
@@ -184,9 +147,6 @@
             android:inputType="textPassword"
             android:singleLine="true"
             android:textSize="14dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.614"
-            app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="501dp" />
 
     </RelativeLayout>
@@ -195,11 +155,8 @@
         android:id="@+id/relativeLayout5"
         android:layout_width="315dp"
         android:layout_height="78dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp">
 
         <TextView
             android:id="@+id/textView_reingresarContrasena"
@@ -225,9 +182,6 @@
             android:inputType="textPassword"
             android:singleLine="true"
             android:textSize="14dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.614"
-            app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="501dp" />
 
     </RelativeLayout>
@@ -236,34 +190,49 @@
         android:id="@+id/button1"
         android:layout_width="315dp"
         android:layout_height="49dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="270dp"
         android:background="@drawable/shape"
         android:fontFamily="@font/jua_regular"
         android:text="Crear Cuenta"
         android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="320dp"
+        android:layout_gravity="center"
         android:fontFamily="@font/jua_regular"
         android:text="Ya tienes una cuenta??"
         android:textColor="@color/my_light_primary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        android:textStyle="bold"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="80dp"
+        android:layout_height="41dp"
+        android:layout_gravity="bottom"
+        tools:layout_editor_absoluteY="690dp">
+
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/material_dynamic_primary90"
+            android:text="<" />
+
+        <Button
+            android:id="@+id/button_forward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/button_back"
+            android:background="@color/material_dynamic_primary90"
+            android:text=">" />
+
+    </LinearLayout>
+
+</FrameLayout>
