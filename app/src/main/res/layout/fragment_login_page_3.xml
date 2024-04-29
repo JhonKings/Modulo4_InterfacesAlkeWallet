@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_login2"
-    tools:context=".fragments.FragmentLoginPage_3">
+    tools:context=".fragments.FragmentLoginPage_3" >
 
     <ImageView
         android:id="@+id/status_bar"
@@ -18,14 +18,14 @@
         android:id="@+id/text_title1"
         android:layout_width="315dp"
         android:layout_height="104dp"
+        android:layout_gravity="center"
         android:layout_marginTop="-180dp"
         android:fontFamily="@font/jua_regular"
         android:lineHeight="52dp"
         android:text="Logea y empeza a tranferir!"
         android:textFontWeight="400"
         android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"/>
+        android:textStyle="bold" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
@@ -128,29 +128,27 @@
         android:textColor="@color/my_light_primary"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout_1"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_gravity="bottom"
-        tools:layout_editor_absoluteY="690dp">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
 
         <Button
-            android:id="@+id/button_back"
+            android:id="@+id/button_back3"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@color/material_dynamic_primary90"
-            android:text="<" />
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_arrow"
+            android:backgroundTint="#2196F3" />
 
         <Button
-            android:id="@+id/button_forward"
+            android:id="@+id/button_forward3"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignRight="@+id/button_back"
-            android:background="@color/material_dynamic_primary90"
-            android:text=">" />
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow"
+            android:backgroundTint="#2196F3" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </FrameLayout>

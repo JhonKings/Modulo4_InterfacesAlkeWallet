@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/my_light_primary"
     tools:context=".fragments.FragmentSplashScreen_1">
 
     <ImageView
         android:id="@+id/back_color"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/my_light_primary"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -25,30 +25,5 @@
         android:layout_height="wrap_content"
         android:background="@drawable/logo"
         android:layout_gravity="center"/>
-
-    <LinearLayout
-        android:id="@+id/linearLayout_1"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_gravity="bottom"
-        tools:layout_editor_absoluteY="690dp">
-
-
-        <Button
-            android:id="@+id/button_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@color/material_dynamic_primary90"
-            android:text="<" />
-
-        <Button
-            android:id="@+id/button_forward"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignRight="@+id/button_back"
-            android:background="@color/material_dynamic_primary90"
-            android:text=">" />
-
-    </LinearLayout>
 
 </FrameLayout>
