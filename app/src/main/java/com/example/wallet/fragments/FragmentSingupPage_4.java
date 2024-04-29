@@ -46,10 +46,18 @@ public class FragmentSingupPage_4 extends Fragment {
         final NavController navController = Navigation.findNavController(view);
 
         Button btnFragment1 = view.findViewById(R.id.button_back4);
+        Button btnFragment2 = view.findViewById(R.id.button_home4);
+
 
         btnFragment1.setOnClickListener(v -> {
 
             Navigation.findNavController(v).navigate(R.id.fragmentLoginPage_3);
+
+        });
+
+        btnFragment2.setOnClickListener(v -> {
+
+            Navigation.findNavController(v).navigate(R.id.fragmentSplashScreen_1);
 
         });
 

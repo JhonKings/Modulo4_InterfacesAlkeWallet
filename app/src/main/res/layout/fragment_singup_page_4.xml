@@ -224,11 +224,11 @@
             android:backgroundTint="#2196F3" />
 
         <Button
-            android:id="@+id/button_forward4"
+            android:id="@+id/button_home4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentRight="true"
-            android:background="@drawable/right_arrow"
+            android:background="@drawable/home"
             android:backgroundTint="#2196F3" />
 
     </RelativeLayout>
