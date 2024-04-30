@@ -5,6 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".fragments.FragmentProfilePage_9">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/shape_grey"
+        android:drawableLeft="@drawable/profile_icon"
+        android:drawableRight="@drawable/arrow_right"
+        android:fontFamily="@font/jua_regular"
+        android:lineHeight="21dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="    Mi informacion"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
@@ -16,75 +35,56 @@
             android:id="@+id/status_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/status_bar"/>
+            android:background="@drawable/status_bar" />
 
         <TextView
             android:id="@+id/textView_1"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:textSize="20dp"
-            android:lineHeight="30px"
+            android:layout_marginTop="50dp"
             android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:lineHeight="30px"
             android:text="Mi perfil"
             android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_marginTop="50dp"/>
+            android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/pencil_icon"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignRight="@+id/textView_1"
-            android:layout_marginRight="30dp"
             android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
             android:background="@drawable/edit_icon" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/profile_picture"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="60dp"/>
+            android:layout_margin="60dp"
+            android:background="@drawable/profile_picture" />
 
         <ImageView
             android:layout_width="65dp"
             android:layout_height="74dp"
-            android:background="@drawable/profile_picture_2"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="75dp"/>
+            android:layout_margin="75dp"
+            android:background="@drawable/profile_picture_2" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="24sp"
-            android:textSize="16dp"
-            android:lineHeight="24dp"
+            android:layout_marginTop="210dp"
             android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:lineHeight="24dp"
             android:text="Amanda Alkemy"
             android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_marginTop="210dp"/>
+            android:textSize="16dp" />
     </RelativeLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="345dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="-40dp"
-        android:background="@drawable/shape_grey"
-        android:fontFamily="@font/jua_regular"
-        android:text="    Mi informacion"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="14dp"
-        android:textAlignment="textStart"
-        android:lineHeight="21dp"
-        android:layout_gravity="center"
-        android:drawableLeft="@drawable/profile_icon"
-        android:drawableRight="@drawable/arrow_right"
-        android:paddingRight="20dp"
-        android:paddingLeft="20dp"/>
 
     <Button
         android:id="@+id/button1"
