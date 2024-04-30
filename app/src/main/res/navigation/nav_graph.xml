@@ -47,4 +47,29 @@
             app:destination="@id/fragmentLoginPage_3" />
     </fragment>
     <fragment android:id="@+id/placeholder" />
+    <fragment
+        android:id="@+id/fragmentHomePage_52"
+        android:name="com.example.wallet.fragments.FragmentHomePage_5"
+        android:label="fragment_home_page_5"
+        tools:layout="@layout/fragment_home_page_5" />
+    <fragment
+        android:id="@+id/fragmentHomePageEmptyCase_6"
+        android:name="com.example.wallet.fragments.FragmentHomePageEmptyCase_6"
+        android:label="fragment_home_page_empty_case_6"
+        tools:layout="@layout/fragment_home_page_empty_case_6" />
+    <fragment
+        android:id="@+id/fragmentRequestMoney_7"
+        android:name="com.example.wallet.fragments.FragmentRequestMoney_7"
+        android:label="fragment_request_money_7"
+        tools:layout="@layout/fragment_request_money_7" />
+    <fragment
+        android:id="@+id/fragmentSendMoney_8"
+        android:name="com.example.wallet.fragments.FragmentSendMoney_8"
+        android:label="fragment_send_money_8"
+        tools:layout="@layout/fragment_send_money_8" />
+    <fragment
+        android:id="@+id/fragmentProfilePage_9"
+        android:name="com.example.wallet.fragments.FragmentProfilePage_9"
+        android:label="fragment_profile_page_9"
+        tools:layout="@layout/fragment_profile_page_9" />
 </navigation>
