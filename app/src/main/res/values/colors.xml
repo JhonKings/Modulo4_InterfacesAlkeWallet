@@ -6,6 +6,14 @@
     <color name="grey">#F3F4F5</color>
     <color name="blue">#1A87DD</color>
     <color name="green">#72DB31</color>
+    <color name="grey_opacity">#1B2A3B</color>
+    <color name="black_opacity">#05000000</color>
+    <color name="light_blue">#1A87DD</color>
+
+
+
+
+
 
 
 </resources>
