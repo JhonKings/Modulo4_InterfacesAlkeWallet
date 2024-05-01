@@ -114,7 +114,6 @@
             android:text="yara_kalil@gmail.com"
             android:textColor="#80000000"
             android:textSize="12sp" />
-
     </RelativeLayout>
 
     <LinearLayout
@@ -127,7 +126,6 @@
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="0.155">
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -165,7 +163,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="0.365">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -195,9 +192,7 @@
                 android:textSize="14sp"
                 android:translationY="-1.75sp">
 
-
             </com.google.android.material.textfield.TextInputEditText>
-
 
         </com.google.android.material.textfield.TextInputLayout>
 

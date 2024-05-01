@@ -14,16 +14,16 @@
 
     <TextView
         android:id="@+id/text_title1"
-        android:layout_width="319dp"
+        android:layout_width="315dp"
         android:layout_height="104dp"
         android:layout_gravity="center"
-        android:layout_marginTop="-270dp"
+        android:layout_marginTop="-260dp"
         android:fontFamily="@font/jua_regular"
         android:lineHeight="52dp"
         android:text="Registrarse y empezar a transferir"
         android:textFontWeight="400"
         android:textSize="32sp"
-        android:textStyle="bold" />
+        android:textColor="@color/black" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
@@ -39,7 +39,10 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/jua_regular"
             android:text="Nombre"
-            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
             tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="383dp" />
 
@@ -71,7 +74,10 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/jua_regular"
             android:text="Apellido"
-            android:textStyle="bold"
+            android:lineHeight="21dp"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14dp"
             tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="383dp" />
 
@@ -103,7 +109,10 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/jua_regular"
             android:text="Email"
-            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
             tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="383dp" />
 
@@ -135,7 +144,10 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/jua_regular"
             android:text="Contraseña"
-            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
             tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="383dp" />
 
@@ -172,7 +184,10 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/jua_regular"
             android:text="Reingresar Contraseña"
-            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
             tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="383dp" />
 
@@ -219,7 +234,7 @@
         android:textStyle="bold"/>
 
 
-    <RelativeLayout
+    !<!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom">
@@ -240,6 +255,6 @@
             android:background="@drawable/home"
             android:backgroundTint="#2196F3" />
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
 </FrameLayout>
