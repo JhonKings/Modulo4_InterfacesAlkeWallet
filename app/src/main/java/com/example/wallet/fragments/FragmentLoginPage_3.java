@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +45,7 @@ public class FragmentLoginPage_3 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final NavController navController = Navigation.findNavController(view);
+        /*final NavController navController = Navigation.findNavController(view);
 
         Button btnFragment1 = view.findViewById(R.id.button_back3);
         Button btnFragment2 = view.findViewById(R.id.button_forward3);
@@ -60,7 +61,16 @@ public class FragmentLoginPage_3 extends Fragment {
             navController.navigate(R.id.fragmentSingupPage_4);
 
 
-        });
+        });*/
+
+        final NavController navController = Navigation.findNavController(view);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                navController.navigate(R.id.fragmentSingupPage_4);
+            }
+        }, 3000);
 
     }
 }

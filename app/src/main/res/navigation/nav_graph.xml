@@ -38,23 +38,12 @@
         android:id="@+id/fragmentSingupPage_4"
         android:name="com.example.wallet.fragments.FragmentSingupPage_4"
         android:label="fragment_singup_page_4"
-        tools:layout="@layout/fragment_singup_page_4" />
-    <fragment android:id="@+id/placeholder" />
-    <fragment
-        android:id="@+id/fragmentHomePage_52"
-        android:name="com.example.wallet.fragments.FragmentHomePage_5"
-        android:label="fragment_home_page_5"
-        tools:layout="@layout/fragment_home_page_5" >
+        tools:layout="@layout/fragment_singup_page_4" >
         <action
-            android:id="@+id/action_fragmentHomePage_52_to_fragmentLoginSingupPage_2"
-            app:destination="@id/fragmentLoginSingupPage_2" />
-        <action
-            android:id="@+id/action_fragmentHomePage_52_to_fragmentRequestMoney_7"
-            app:destination="@id/fragmentRequestMoney_7" />
-        <action
-            android:id="@+id/action_fragmentHomePage_52_to_fragmentSendMoney_8"
-            app:destination="@id/fragmentSendMoney_8" />
+            android:id="@+id/action_fragmentSingupPage_4_to_fragmentHomePage_5"
+            app:destination="@id/fragmentHomePage_5" />
     </fragment>
+    <fragment android:id="@+id/placeholder" />
     <fragment
         android:id="@+id/fragmentHomePageEmptyCase_6"
         android:name="com.example.wallet.fragments.FragmentHomePageEmptyCase_6"
@@ -66,8 +55,8 @@
         android:label="fragment_request_money_7"
         tools:layout="@layout/fragment_request_money_7" >
         <action
-            android:id="@+id/action_fragmentRequestMoney_7_to_fragmentHomePage_52"
-            app:destination="@id/fragmentHomePage_52" />
+            android:id="@+id/action_fragmentRequestMoney_7_to_fragmentHomePage_5"
+            app:destination="@id/fragmentHomePage_5" />
     </fragment>
     <fragment
         android:id="@+id/fragmentSendMoney_8"
@@ -75,12 +64,24 @@
         android:label="fragment_send_money_8"
         tools:layout="@layout/fragment_send_money_8" >
         <action
-            android:id="@+id/action_fragmentSendMoney_8_to_fragmentHomePage_52"
-            app:destination="@id/fragmentHomePage_52" />
+            android:id="@+id/action_fragmentSendMoney_8_to_fragmentHomePage_5"
+            app:destination="@id/fragmentHomePage_5" />
     </fragment>
     <fragment
         android:id="@+id/fragmentProfilePage_9"
         android:name="com.example.wallet.fragments.FragmentProfilePage_9"
         android:label="fragment_profile_page_9"
         tools:layout="@layout/fragment_profile_page_9" />
+    <fragment
+        android:id="@+id/fragmentHomePage_5"
+        android:name="com.example.wallet.fragments.FragmentHomePage_5"
+        android:label="fragment_home_page_5"
+        tools:layout="@layout/fragment_home_page_5" >
+        <action
+            android:id="@+id/action_fragmentHomePage_5_to_fragmentRequestMoney_7"
+            app:destination="@id/fragmentRequestMoney_7" />
+        <action
+            android:id="@+id/action_fragmentHomePage_5_to_fragmentSendMoney_8"
+            app:destination="@id/fragmentSendMoney_8" />
+    </fragment>
 </navigation>
