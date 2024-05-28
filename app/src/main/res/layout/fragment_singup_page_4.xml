@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_login2"
-    tools:context=".fragments.FragmentSingupPage_4">
+    tools:context=".presentation.fragments.FragmentSingupPage_4">
 
     <ImageView
         android:id="@+id/status_bar"
@@ -211,7 +211,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnCrearCuenta"
         android:layout_width="315dp"
         android:layout_height="49dp"
         android:layout_gravity="center"
@@ -223,7 +223,7 @@
         android:textColor="@color/white"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="320dp"

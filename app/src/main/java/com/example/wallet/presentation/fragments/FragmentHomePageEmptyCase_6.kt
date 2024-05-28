@@ -1,4 +1,4 @@
-package com.example.wallet.fragments
+package com.example.wallet.presentation.fragments
 
 import android.os.Bundle
 import android.os.Handler

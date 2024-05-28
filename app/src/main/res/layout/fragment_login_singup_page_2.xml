@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FragmentLoginSingupPage_2">
+    tools:context=".presentation.fragments.FragmentLoginSingupPage_2">
 
 
     <ImageView
@@ -40,7 +40,7 @@
         android:layout_marginTop="70dp"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCrearCuenta"
         android:layout_width="315dp"
         android:layout_height="45dp"
         android:layout_marginTop="250dp"
@@ -52,7 +52,7 @@
         android:layout_gravity="center"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtYaExisteCuenta"
         android:layout_width="130dp"
         android:layout_height="21dp"
         android:layout_gravity="center"

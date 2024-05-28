@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FragmentProfilePage_9">
+    tools:context=".presentation.fragments.FragmentProfilePage_9">
 
     <Button
         android:id="@+id/button"
@@ -36,6 +36,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/status_bar" />
+
+        <ImageView
+            android:id="@+id/imgArrowBack"
+            android:layout_width="14dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/status_bar"
+            android:background="@drawable/arrow_left"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"/>
 
         <TextView
             android:id="@+id/textView_1"

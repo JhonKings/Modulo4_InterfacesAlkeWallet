@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FragmentSendMoney_8">
+    tools:context=".presentation.fragments.FragmentSendMoney_8">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:background="@drawable/status_bar"/>
 
         <ImageView
-            android:id="@+id/arrow_left"
+            android:id="@+id/imgArrowBack"
             android:layout_width="14dp"
             android:layout_height="11dp"
             android:layout_below="@+id/status_bar"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_login2"
-    tools:context=".fragments.FragmentLoginPage_3" >
+    tools:context=".presentation.fragments.FragmentLoginPage_3" >
 
     <ImageView
         android:id="@+id/status_bar"
@@ -50,7 +50,7 @@
             tools:layout_editor_absoluteY="383dp" />
 
         <EditText
-            android:id="@+id/editTextTextEmail"
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="49dp"
             android:layout_below="@+id/textView_email"
@@ -88,7 +88,7 @@
 
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="49dp"
             android:fontFamily="@font/jua_regular"
@@ -108,7 +108,7 @@
             android:id="@+id/textView_olvidoContrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextTextPassword"
+            android:layout_below="@+id/editTextPassword"
             android:layout_margin="5dp"
             android:fontFamily="@font/jua_regular"
             android:gravity="right"
@@ -121,7 +121,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnLogin"
         android:layout_width="315dp"
         android:layout_height="49dp"
         android:layout_marginTop="250dp"
@@ -133,11 +133,11 @@
         android:layout_gravity="center"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtCrearCuentaNueva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
         android:layout_gravity="center"
+        android:layout_marginTop="300dp"
         android:fontFamily="@font/jua_regular"
         android:text="Crear una nueva cuenta"
         android:textColor="@color/my_light_primary"
